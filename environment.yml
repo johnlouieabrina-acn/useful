@@ -1,0 +1,21 @@
+# ctwrap conda package dependencies
+name: ctwrap
+channels:
+  - conda-forge
+  - cantera/label/dev
+  - defaults
+dependencies:
+  - python=3.7
+  - numpy
+  - h5py
+  - pint
+  - ruamel.yaml
+  - pandas
+  - cantera
+  - setuptools
+  - pytest
+  - pytest-cov
+  - coverage
+  - ipython
+  - jupyter
+  - matplotlib

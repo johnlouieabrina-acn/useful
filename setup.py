@@ -5,7 +5,7 @@ import sys
 
 # get version
 here = path.abspath(path.dirname(__file__))
-with open(path.join(here, 'ctwrap', '_version.py')) as version_file:
+with open(path.join(here, 'useful', '_version.py')) as version_file:
     exec(version_file.read())
 
 
@@ -15,7 +15,7 @@ with open('README.md', 'r', encoding="utf-8") as f:
 
 # configuration
 setup(
-    name='ctwrap',
+    name='useful',
     version=__version__,
     description='Python wrapper for batch simulations',
     long_description=long_description,
@@ -36,7 +36,7 @@ setup(
     license='MIT',
     packages=find_packages(),
     entry_points={
-        'console_scripts': ['ctwrap=ctwrap.bin.ctwrap:main'],
+        'console_scripts': ['useful=useful.bin.ctwrap:main'],
     },
     include_package_data=True,
     install_requires=[

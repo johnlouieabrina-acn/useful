@@ -18,17 +18,6 @@ jobs:
         shell: bash -l {0}
     steps:
     - uses: actions/checkout@v2
-    - uses: conda-incubator/setup-miniconda@v2
-      with:
-        python-version: 3.7
-        mamba-version: "*"
-        channels: conda-forge,cantera/label/dev,defaults
-        channel-priority: true
-        activate-environment: ctwrap
-        environment-file: environment.yml
-    - name: Install ctwrap
-      run: |
-        pip install -e .
     - name: Install Sphinx dependencies
       run: |
         cd docs
